@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    /* SOFT PASTEL BACKGROUND */
+    background: linear-gradient(to right, #dbeafe, #e0f7fa);
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    color: #0d3b66;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+
+    background: #ffffff;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.navbar h2 {
+    color: #60a5fa;
+    font-weight: 800;
+    margin: 0;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #0d3b66;
+    text-decoration: none;
+    font-weight: 600;
+
+    padding: 10px 18px;
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background: #f0f9ff;
+    color: #3b82f6;
+}
+
+/* PRIMARY BUTTON */
+.navbar div a:first-child {
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(96,165,250,0.3);
+}
+
+/* ================= HERO ================= */
+.hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #0d3b66;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* ================= SEARCH ================= */
+.search-bar {
+    text-align: center;
+    margin: 20px 0 50px;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 14px 22px;
+    border-radius: 14px;
+    border: 1px solid #e0f2fe;
+
+    background: #ffffff;
+    color: #0d3b66;
+
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+/* INPUT FOCUS */
+.search-bar input:focus,
+.search-bar select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96,165,250,0.2);
+}
+
+/* SEARCH BUTTON */
+.search-bar button {
+    padding: 14px 30px;
+
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 14px;
+
+    font-weight: 700;
+    cursor: pointer;
+
+    box-shadow: 0 6px 20px rgba(96,165,250,0.3);
+    transition: 0.3s ease;
+}
+
+/* ================= POSTS ================= */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 60px;
+}
+
+/* ================= CARD ================= */
+.post-card {
+    width: 280px;
+
+    background: #ffffff;
+    border-radius: 24px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.post-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.post-content {
+    padding: 20px;
+    line-height: 1.8;
+    color: #1e3a5f;
+}
+
+/* CATEGORY */
+.category {
+    background: #f0f9ff;
+    color: #3b82f6;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    padding: 6px 10px;
+    border-radius: 20px;
+
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* TITLE */
+.post-content h3 {
+    margin: 0 0 8px;
+    color: #0d3b66;
+}
+
+/* AUTHOR */
+.post-content p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* RATING */
+.rating {
+    color: #22d3ee;
+    font-weight: 700;
+}
+
+/* ================= POST PAGE ================= */
+.post-container {
+    width: 70%;
+    margin: 40px auto;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ================= BUTTONS ================= */
+button,
+.back-btn {
+    display: block;
+    text-align: center;
+
+    margin: 40px auto;
+
+    width: fit-content;
+
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    box-shadow: 0 4px 15px rgba(96,165,250,0.3);
+    transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+button:hover,
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(96,165,250,0.4);
+}
+
+/* ================= COMMENTS ================= */
+.comment-box {
+    background: #ffffff;
+    border: 1px solid #e0f2fe;
+
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.comment-user {
+    font-weight: 600;
+    color: #0d3b66;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.comment-text {
+    margin-top: 5px;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #e0f2fe;
+
+    font-family: 'Poppins', sans-serif;
+}
+.read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.read-more-btn:hover {
+    transform: scale(1.05);
+}
+.stars span {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.2s;
+}
+
+.stars span:hover,
+.stars span.active {
+    color: gold;
+}
+
+.login-lock-box {
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    background: #e0f2fe;
+    border-radius: 12px;
+}
+
+.login-btn {
+    padding: 10px 18px;
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}

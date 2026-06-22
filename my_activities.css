@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ================= GENERAL ================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    /* SOFT BLUE / PASTEL GRADIENT */
+    background: linear-gradient(to right, #dbeafe, #e0f7fa);
+    background-attachment: fixed;
+
+    color: #0d3b66;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* ================= TITLE ================= */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0d3b66;
+    font-weight: 800;
+}
+
+/* ================= TABS ================= */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* TAB BUTTONS */
+.tabs .card {
+    padding: 10px 20px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #0d3b66;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.tabs .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* ACTIVE TAB */
+.tabs .card.active {
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: #ffffff;
+}
+
+/* ================= TAB CONTENT ================= */
+.tab-content {
+    display: none;
+    animation: fade 0.3s ease-in-out;
+}
+
+/* ================= ACTIVITY CARD ================= */
+.activity-card {
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 18px 20px;
+    margin-bottom: 15px;
+
+    border-radius: 16px;
+
+    border: none;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.activity-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+.activity-card h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #0d3b66;
+    font-weight: 700;
+}
+
+/* TEXT */
+.activity-card p {
+    margin: 6px 0;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ================= LINK STYLE ================= */
+.activity-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fade {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+
+    padding: 10px 20px;
+
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    box-shadow: 0 4px 15px rgba(96,165,250,0.3);
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(96,165,250,0.4);
+}

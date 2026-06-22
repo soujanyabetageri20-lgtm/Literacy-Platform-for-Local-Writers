@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(to right, #dbeafe, #e0f7fa);
+    background-attachment: fixed;
+
+    color: #0d3b66;
+    min-height: 100vh;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* ================= TABLE WRAPPER ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ================= HEADER ================= */
+th {
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+
+    padding: 16px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ================= CELLS ================= */
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e0f2fe;
+
+    color: #334155;
+    font-weight: 500;
+}
+
+/* ================= ROW HOVER ================= */
+tr:hover {
+    background: #f0f9ff;
+}
+
+/* ================= STATUS ================= */
+.pending {
+    color: #f59e0b;
+    font-weight: 700;
+}
+
+.approved {
+    color: #22c55e;
+    font-weight: 700;
+}
+
+.rejected {
+    color: #ef4444;
+    font-weight: 700;
+}
+
+.done {
+    color: #64748b;
+    font-weight: 600;
+}
+
+/* ================= BUTTON BASE ================= */
+.btn {
+    padding: 8px 16px;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 12px;
+    margin: 3px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    display: inline-block;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+/* VIEW */
+.view {
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+}
+
+/* APPROVE */
+.approve {
+    background: linear-gradient(to right, #22c55e, #4ade80);
+}
+
+/* REJECT */
+.reject {
+    background: linear-gradient(to right, #ff6a6a, #ff3d3d);
+}
+
+/* BUTTON HOVER */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+
+
+/* ================= BACK / LOGOUT ================= */
+.logout {
+    display: inline-block;
+    margin: 30px auto;
+
+    padding: 10px 20px;
+
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 14px;
+
+    font-weight: 700;
+
+    box-shadow: 0 4px 15px rgba(96,165,250,0.3);
+    transition: 0.3s ease;
+}
+
+.logout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(96,165,250,0.4);
+}
+

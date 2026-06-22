@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    /* SOFT BLUE / PASTEL GRADIENT */
+    background: linear-gradient(to right, #dbeafe, #e0f7fa);
+    background-attachment: fixed;
+
+    color: #0d3b66;
+}
+
+/* ===== DASHBOARD CARD ===== */
+.dashboard {
+    width: 360px;
+    margin: 100px auto;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    border: none;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+
+    text-align: center;
+}
+
+.dashboard h2 {
+    margin-bottom: 25px;
+    color: #0d3b66;
+    font-weight: 800;
+}
+
+/* DASHBOARD LINKS */
+.dashboard a {
+    display: block;
+
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+
+    padding: 12px;
+    margin: 12px 0;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+
+    box-shadow: 0 4px 15px rgba(96,165,250,0.3);
+    transition: all 0.3s ease;
+}
+
+.dashboard a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(96,165,250,0.4);
+}
+
+/* ===== CREATE POST FORM ===== */
+.form-container {
+    width: 520px;
+    margin: 60px auto;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    border: none;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #0d3b66;
+    font-weight: 800;
+}
+
+/* LABEL */
+.form-container label {
+    font-weight: 600;
+    color: #334155;
+}
+
+/* INPUT + TEXTAREA */
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+
+    border: 1px solid #e0f2fe;
+    border-radius: 12px;
+
+    background: #ffffff;
+    color: #0d3b66;
+
+    font-family: 'Poppins', sans-serif;
+
+    transition: all 0.3s ease;
+}
+
+/* FOCUS */
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border: 1px solid #60a5fa;
+    box-shadow: 0 4px 15px rgba(96,165,250,0.2);
+}
+
+/* BUTTON */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+    font-weight: 700;
+
+    box-shadow: 0 5px 18px rgba(96,165,250,0.3);
+    transition: all 0.3s ease;
+}
+
+.form-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(96,165,250,0.4);
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+    display: block;
+    width: fit-content;
+
+    margin: 30px auto;
+
+    padding: 10px 20px;
+
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 12px;
+
+    font-weight: 700;
+
+    box-shadow: 0 4px 15px rgba(96,165,250,0.3);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(96,165,250,0.4);
+}
